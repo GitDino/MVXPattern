@@ -1,0 +1,25 @@
+platform :ios, '8.0'
+
+target 'MVCDemo' do
+
+  pod 'MJRefresh'
+
+end
+
+target 'MVPDemo' do
+  
+  pod 'MJRefresh'
+
+end
+
+target 'MVVMDemo' do
+  
+  pod 'MJRefresh'
+
+end
+
+target 'MVXPatternDemo' do
+  
+  pod 'MJRefresh'
+
+end
