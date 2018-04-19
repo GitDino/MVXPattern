@@ -37,6 +37,9 @@
 		013A22B62088F7FB00C77316 /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A22B52088F7FB00C77316 /* DORootVC.m */; };
 		013A22BA2088FB0F00C77316 /* DOCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A22B92088FB0F00C77316 /* DOCommodity.m */; };
 		013A22BE2089008F00C77316 /* DOCommodityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A22BD2089008F00C77316 /* DOCommodityCell.m */; };
+		013A22C22089047E00C77316 /* DOCommodityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A22C12089047E00C77316 /* DOCommodityCell.m */; };
+		013A22C62089056B00C77316 /* DOCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A22C52089056B00C77316 /* DOCommodity.m */; };
+		013A22CA208905C200C77316 /* DOCommodityPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A22C9208905C200C77316 /* DOCommodityPresenter.m */; };
 		1F912FC66D458CD507DC6E69 /* libPods-MVCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEB87A43E020FF0167292C0 /* libPods-MVCDemo.a */; };
 		34E0E041D9AADC203932906B /* libPods-MVPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0313F638F768261A6894C85 /* libPods-MVPDemo.a */; };
 		A5E4D8532FC953AAC5353FB8 /* libPods-MVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A40A44CD48AA18D23D07366 /* libPods-MVVMDemo.a */; };
@@ -167,6 +170,12 @@
 		013A22B92088FB0F00C77316 /* DOCommodity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCommodity.m; sourceTree = "<group>"; };
 		013A22BC2089008F00C77316 /* DOCommodityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCommodityCell.h; sourceTree = "<group>"; };
 		013A22BD2089008F00C77316 /* DOCommodityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCommodityCell.m; sourceTree = "<group>"; };
+		013A22C02089047E00C77316 /* DOCommodityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCommodityCell.h; sourceTree = "<group>"; };
+		013A22C12089047E00C77316 /* DOCommodityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCommodityCell.m; sourceTree = "<group>"; };
+		013A22C42089056B00C77316 /* DOCommodity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCommodity.h; sourceTree = "<group>"; };
+		013A22C52089056B00C77316 /* DOCommodity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCommodity.m; sourceTree = "<group>"; };
+		013A22C8208905C200C77316 /* DOCommodityPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCommodityPresenter.h; sourceTree = "<group>"; };
+		013A22C9208905C200C77316 /* DOCommodityPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCommodityPresenter.m; sourceTree = "<group>"; };
 		0982BF7C9B91DD7AB6758C0B /* Pods-MVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3F71B7822F530F4EB5E0A495 /* Pods-MVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVCDemo/Pods-MVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		437A4E299D7FB45600AE7AF6 /* Pods-MVXPatternDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVXPatternDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVXPatternDemo/Pods-MVXPatternDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -432,6 +441,9 @@
 		013A22442088F72400C77316 /* MVPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				013A22C32089055600C77316 /* Model */,
+				013A22BF2089046C00C77316 /* View */,
+				013A22C72089058100C77316 /* Presenter */,
 				013A22772088F74600C77316 /* Controller */,
 				013A22762088F73100C77316 /* Bases */,
 				013A22752088F72B00C77316 /* Resources */,
@@ -559,6 +571,33 @@
 				013A22BD2089008F00C77316 /* DOCommodityCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		013A22BF2089046C00C77316 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				013A22C02089047E00C77316 /* DOCommodityCell.h */,
+				013A22C12089047E00C77316 /* DOCommodityCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		013A22C32089055600C77316 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				013A22C42089056B00C77316 /* DOCommodity.h */,
+				013A22C52089056B00C77316 /* DOCommodity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		013A22C72089058100C77316 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				013A22C8208905C200C77316 /* DOCommodityPresenter.h */,
+				013A22C9208905C200C77316 /* DOCommodityPresenter.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A773E17FB6A2E5ABD1F5B267 /* Frameworks */ = {
@@ -1195,9 +1234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013A22C22089047E00C77316 /* DOCommodityCell.m in Sources */,
+				013A22CA208905C200C77316 /* DOCommodityPresenter.m in Sources */,
 				013A227A2088F76700C77316 /* DORootVC.m in Sources */,
 				013A22552088F72500C77316 /* main.m in Sources */,
 				013A22472088F72400C77316 /* AppDelegate.m in Sources */,
+				013A22C62089056B00C77316 /* DOCommodity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
