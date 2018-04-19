@@ -14,11 +14,11 @@
 
 + (instancetype)commedityWithName:(NSString *) name price:(NSString *) price img:(UIImage *) img
 {
-    DOCommodity *commdity = [[DOCommodity alloc] init];
-    commdity.name = name;
-    commdity.price = price;
-    commdity.img = img;
-    return commdity;
+    DOCommodity *commodity = [[DOCommodity alloc] init];
+    commodity.name = name;
+    commodity.price = price;
+    commodity.img = img;
+    return commodity;
 }
 
 @end

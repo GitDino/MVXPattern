@@ -49,8 +49,6 @@
     [self.view addSubview:self.list_tableView];
 }
 
-#pragma mark - Post Cycle
-
 - (void)configAboutBlock
 {
     __weak typeof(self) weakSelf = self;
