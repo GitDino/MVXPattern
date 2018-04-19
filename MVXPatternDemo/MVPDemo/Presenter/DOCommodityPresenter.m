@@ -9,6 +9,19 @@
 #import "DOCommodityPresenter.h"
 #import "DOCommodity.h"
 
+@implementation DOUICommodity
+
++ (instancetype)uiCommodityWithName:(NSString *) name price:(NSString *) price img:(UIImage *) img
+{
+    DOUICommodity *ui_commodity = [[DOUICommodity alloc] init];
+    ui_commodity.name = name;
+    ui_commodity.price = price;
+    ui_commodity.img = img;
+    return ui_commodity;
+}
+
+@end
+
 @implementation DOCommodityPresenter
 
 /**
@@ -20,7 +33,10 @@
     for (int i = 0; i < 15; i ++)
     {
         DOCommodity *commodity = [DOCommodity commedityWithName:[NSString stringWithFormat:@"%d", i] price:[NSString stringWithFormat:@"%d", i * 100] img:[UIImage imageNamed:@"icon_commodity"]];
-        [data_array addObject:commodity];
+        
+        DOUICommodity *ui_commodity = [DOUICommodity uiCommodityWithName:commodity.name price:commodity.price img:commodity.img];
+        
+        [data_array addObject:ui_commodity];
     }
     
     if (data_array)

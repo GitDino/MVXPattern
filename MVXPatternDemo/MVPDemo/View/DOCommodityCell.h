@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class DOCommodity;
+@class DOUICommodity;
 
 @interface DOCommodityCell : UITableViewCell
 
-@property (nonatomic, strong) DOCommodity *commodity;
+@property (nonatomic, strong) DOUICommodity *ui_commodity;
 
 /**
  创建商品Cell
