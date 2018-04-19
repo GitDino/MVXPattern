@@ -53,6 +53,7 @@
         [self.contentView addSubview:_name_label];
         
         _price_label = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 12 - 100, 12, 100, 50)];
+        _price_label.textAlignment = NSTextAlignmentRight;
         [self.contentView addSubview:_price_label];
     }
     return self;
@@ -66,9 +67,9 @@
     
     _icon_image.image = _commodity.img;
     
-    _name_label.text = _commodity.name;
+    _name_label.text = [NSString stringWithFormat:@"商品：%@", _commodity.name];
     
-    _price_label.text = _commodity.price;
+    _price_label.text = [NSString stringWithFormat:@"%@ 元", _commodity.price];
 }
 
 @end
