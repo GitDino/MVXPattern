@@ -1,5 +1,5 @@
 //
-//  DOCommodityCell.m
+//  DOCommodityCellMVP.m
 //  MVPDemo
 //
 //  Created by 魏欣宇 on 2018/4/20.
@@ -9,11 +9,11 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
-#import "DOCommodityCell.h"
+#import "DOCommodityCellMVP.h"
 
 #import "DOCommodityPresenter.h"
 
-@interface DOCommodityCell ()
+@interface DOCommodityCellMVP ()
 
 @property (nonatomic, strong) UIImageView *icon_image;
 
@@ -23,17 +23,17 @@
 
 @end
 
-@implementation DOCommodityCell
-
 #pragma mark - Public Cycle
 
-+ (instancetype)commodityCellWithTableView:(UITableView *) tableView
+@implementation DOCommodityCellMVP
+
++ (instancetype)commodityCellMVPWithTableView:(UITableView *) tableView
 {
-    static NSString *ID = @"DOCommodityCell";
-    DOCommodityCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    static NSString *ID = @"DOCommodityCellMVP";
+    DOCommodityCellMVP *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil)
     {
-        cell = [[DOCommodityCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[DOCommodityCellMVP alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     return cell;
 }
@@ -60,6 +60,7 @@
 }
 
 #pragma mark - Setter Cycle
+
 - (void)setUi_commodity:(DOUICommodity *)ui_commodity
 {
     _ui_commodity = ui_commodity;

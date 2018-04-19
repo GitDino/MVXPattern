@@ -11,7 +11,7 @@
 #import <MJRefresh.h>
 #import "DORootVC.h"
 
-#import "DOCommodityCell.h"
+#import "DOCommodityCellMVP.h"
 
 #import "DOCommodityPresenter.h"
 
@@ -82,8 +82,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DOCommodityCell *cell = [DOCommodityCell commodityCellWithTableView:tableView];
-    cell.commodity = self.data_array[indexPath.row];
+    DOCommodityCellMVP *cell = [DOCommodityCellMVP commodityCellMVPWithTableView:tableView];
+    cell.ui_commodity = self.data_array[indexPath.row];
     return cell;
 }
 

@@ -1,5 +1,5 @@
 //
-//  DOCommodityCell.h
+//  DOCommodityCellMVP.h
 //  MVPDemo
 //
 //  Created by 魏欣宇 on 2018/4/20.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class DOUICommodity;
 
-@interface DOCommodityCell : UITableViewCell
+@interface DOCommodityCellMVP : UITableViewCell
 
 @property (nonatomic, strong) DOUICommodity *ui_commodity;
 
@@ -18,6 +18,6 @@
  
  @param tableView 列表
  */
-+ (instancetype)commodityCellWithTableView:(UITableView *) tableView;
++ (instancetype)commodityCellMVPWithTableView:(UITableView *) tableView;
 
 @end
