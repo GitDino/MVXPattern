@@ -44,6 +44,8 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
     {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         _icon_image = [[UIImageView alloc] initWithFrame:CGRectMake(12, 12, 60, 50)];
         [self.contentView addSubview:_icon_image];
         
