@@ -12,12 +12,6 @@ target 'MVPDemo' do
 
 end
 
-target 'MVVMDemo' do
-  
-  pod 'MJRefresh'
-
-end
-
 target 'MVXPatternDemo' do
   
   pod 'MJRefresh'
